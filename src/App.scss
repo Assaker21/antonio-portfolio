@@ -14,6 +14,7 @@ body {
 }
 
 header {
+  position: relative;
   width: calc(100vw - 2rem);
   height: 100vh;
   margin: 0 auto;
@@ -126,6 +127,10 @@ section {
 }
 
 @media (max-width: 680px) {
+  .button {
+    width: 100%;
+  }
+
   header {
     width: calc(100% - 2rem);
     height: 100vh;
@@ -142,7 +147,13 @@ section {
     img {
       width: 100%;
       max-width: 300px;
+      max-height: 350px;
       height: auto;
+    }
+
+    .scroll-further {
+      display: none;
+      color: transparent;
     }
   }
 }
